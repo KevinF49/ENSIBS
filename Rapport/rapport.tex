@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+
+\usepackage[francais]{babel}	% A décommenter pour avoir la date en anglais
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{epstopdf}
+\usepackage{underscore}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{top=2cm, bottom=2cm}
+
+\date{}                                           % Activate to display a given date or no date
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{Titre}
+\cfoot{\today}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{figure}[!ht]
+	\begin{minipage}{0.3\linewidth}
+		\includegraphics[width=4cm]{images/logo-ensibs.pdf}
+	\end{minipage}
+	\begin{minipage}{0.7\linewidth}
+		\raggedleft
+		\includegraphics[height=1.8cm]{images/logo-ubs.jpg}
+	\end{minipage}
+\end{figure}
+
+\begin{center}
+{\Large Université de Bretagne Sud\\~\\
+ENSIBS Cyberdéfense \\~\\
+\Large 2015-2016\\~\\}
+\end{center}
+
+\vspace{2cm}
+
+\begin{center}
+{\huge Compte Rendu ... \\~\\
+\huge « Projet ... »\\~\\}
+\end{center}
+
+\vspace{6cm}
+
+\begin{center}
+	\begin{minipage}[t]{\linewidth}
+		\begin{minipage}[t]{.5\linewidth}
+		   \raggedleft
+		   {\large Réalisé par :}
+		\end{minipage}
+		\begin{minipage}[t]{.5\linewidth}
+		   {\large \begin{itemize}
+		   \item[-] Truc Machin
+		   \end{itemize} }
+		\end{minipage}
+		
+		\vspace{1cm}
+		
+		\begin{minipage}[t]{.5\linewidth}
+		   \raggedleft
+		   {\large Encadré par :}
+		\end{minipage}
+		\begin{minipage}[t]{.5\linewidth}
+		   {\large \begin{itemize}
+		   	\item[-] Truc Bidule
+		   	\end{itemize}}
+		\end{minipage}
+	\end{minipage}
+\end{center}
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\newpage
+
+\section{Conclusion}
+\newpage
+
+
+\end{document}  
